@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parentdiv{
+            background-color: #ff7675;
+            width: 30vw;
+            height:20vh;
+        position: absolute;
+        top:50px;
+        left:400px;
+        text-align: center;
+        border: 1px solid black;
+        }
+        button{
+            width:auto;
+        border: 0px solid black;
+        box-shadow: 8px 8px 8px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="parentdiv">
+        <h1>
+            Show or Hide password
+        </h1>
+        <label>Enter password:</label>
+        <input type='password' id="pass"/>
+        <button onclick="fun()" id="butt">Show password</button>
+        </div>
+        
+        <script>
+            function fun(){
+                var buttref=document.getElementById("butt");
+                if(buttref.innerText=="Show password"){
+                var passref=document.getElementById("pass");
+                passref.type="text";
+                var buttref1=document.getElementById("butt");
+                buttref1.innerText="Hide password";
+                }
+                else{
+                    var passref=document.getElementById("pass");
+                    passref.type="password";
+                    var buttref1=document.getElementById("butt");
+                    buttref1.innerText="Show password";
+                }
+            }
+        </script>
+</body>
+</html>

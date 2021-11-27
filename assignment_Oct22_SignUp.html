@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(112, 175, 247);
+        }
+        
+        .container {
+            border: 1px solid black;
+            width: 50%;
+            height: 80vh;
+            margin: 0% 10% 5% 25%;
+            border: none;
+        }
+        
+        .image {
+            width: 50%;
+            height: 80vh;
+            float: left;
+            background-color: palevioletred;
+        }
+        
+        .content {
+            width: 50%;
+            height: 80vh;
+            float: right;
+            background-color: #00b894;
+        }
+        
+        table {
+            padding: 100px 0px 50px 30px;
+        }
+        
+        button {
+            padding: 5px 10px;
+            margin: 10px 0px;
+            background-color: #d35400;
+            color: white;
+            border: none;
+        }
+        
+        button:hover {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1><b>SignUp Form</b></h1>
+        <div class="container">
+            <div class="image">
+                <img src="login.jpg" width="100%" height="100%" />
+            </div>
+            <div class="content">
+                <h2 style="text-align: center; color: white;">User Detail</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td style="color: white;">Firstname</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;">Lastname</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;">Enter mail</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;">Password</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;">Gender</td>
+                            <td><select id="selector">
+                                <option selected>Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>SignUp</button>
+                            </td>
+                            <td><button><a href="assignment_Oct22_Login.html">Login</a></button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

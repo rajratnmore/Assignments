@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<body>
+    <h3>This is my counter app</h3>
+    <button id="plus" onclick="counterApp('plus')">+</button>
+    <button id="minus" onclick="counterApp('minus')">-</button>
+    <input type="text" id="inputBox">
+
+    <script>
+        let count=0;
+        function counterApp(id){
+            if(id==='plus'){
+                count+=1;    
+                let inputBox = document.getElementById('inputBox');
+                inputBox.value = count;
+            }
+            else{
+                count-=1;    
+                let inputBox = document.getElementById('inputBox');
+                inputBox.value = count;
+            }
+        }
+    </script>
+</body>
+</html>

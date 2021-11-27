@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    padding: 0;
+    margin: 0;
+    background-color: #b2bec3;
+}
+.assignment {
+    width: 500px;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 30px;
+    background: #fab1a0;
+
+}
+.wall input {
+    width: 120px;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="assignment">
+            <form action="#">
+                <h2>Volume and surface area of cylinder</h2>
+                <input type="number" placeholder="Height" id="input1" required>
+                <input type="number" placeholder="Radius" id="input2" required>
+                <button onclick="cylinder()">Calculate</button>
+
+            </form>
+            <p id="p1"></p>
+            <p id="p2"></p>
+        </div>
+        <div class="assignment">
+
+            <h2>Calculate Power</h2>
+            <input type="number" placeholder="Voltage" id="v" required>
+            <input type="number" placeholder="Current" id="i" required>
+            <button onclick="powerCal()">Calculate</button>
+
+            </form>
+            <p id="p3"></p>
+            <p id="p4"></p>
+
+        </div>
+        <div class="assignment wall">
+            <h2>Calculte no. of Walls Painted</h2>
+            <input type="number" placeholder="Area" id="a" required>
+            <input type="number" placeholder="Height" id="h" required>
+            <input type="number" placeholder="width" id="w" required>
+            <button onclick="wall()">Calculate</button>
+
+            </form>
+            <p id="p5"></p>
+        </div>
+    </div>
+
+    <script>
+
+        function cylinder() {
+            var h1 = document.getElementById("input1").value
+            var r1 = document.getElementById("input2").value
+            var p1 = document.getElementById("p1")
+            var p2 = document.getElementById("p2")
+
+            if (r1 != 0 && h1 != 0) {
+
+                p1.innerText = "Volume: " + (3.1416 * r1 * r1 * h1)
+                p2.innerText = "Area: " + (2 * 3.1416 * r1 * h1)
+            }else{
+                alert("Fill the all the required Filled!!")
+            }
+
+        }
+
+        function powerCal() {
+            var v = document.getElementById("v").value
+            var i = document.getElementById("i").value
+            var p3 = document.getElementById("p3")
+
+
+            if (v != 0 && i != 0) {
+
+                p3.innerText = "Total Power: " + (v * i)
+            }else{
+                alert("Fill the all the required Filled!!")
+            }
+
+        }
+
+        function wall() {
+
+            var a = document.getElementById("a").value
+            var h = document.getElementById("h").value
+            var w = document.getElementById("w").value
+            var p5 = document.getElementById("p5")
+
+            if (a != 0 && h != 0 && w != 0) {
+
+                p5.innerText = "No. of walls: " + (a / (h * w))
+            }else{
+                alert("Fill the all the required Filled!!")
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

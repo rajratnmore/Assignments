@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Page</title>
+    <style>
+        body{
+            margin:0px;
+            width:100vw;
+            background-color:#f8c291;
+
+        }
+        .imgcontainer{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: center;
+            align-items: center;
+            width:30vw;
+            flex-wrap: wrap;
+            background:white;
+            margin: 20px 0px 0px 400px;
+        }
+        .heading{
+            width: 30%;
+        
+            
+      height: 60px;
+          display: flex;
+      justify-content: space-evenly;
+             }
+             .heading span {
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 17px;
+      padding-right: 7px;
+    }
+
+        .head1{
+            background-color: burlywood;
+            width:50px;
+            height:50px;
+            float:left;
+            margin-left: 70px;
+            position: absolute;
+            font-family: italic;
+        }
+        .head2{
+            background-color: crimson;
+            width:50px;
+            height:50px;
+            float:right;
+        }
+        #img1{
+            width:50px;
+            height:50px;
+            border-radius: 40px;
+            margin:20px 0px 0px 15px;
+            
+        }
+        img{
+            width:330px;
+            height:350px;
+        }
+        .pc_1{
+            float:left;
+
+        }
+        .heading1{margin:20px 0px 0px 5px;
+                  }
+        .place_likes{
+          margin:5px 0px 0px -2px; 
+          flex-wrap: wrap;
+            display: flex;
+            width:25vw;
+        }
+        .place_comment{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        #dots{
+            margin:15px 0px 0px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">  
+        <div class="heading">
+                    <h1 style="margin:0px 0px 0px 5px; padding: 5px auto;"><i>Instagram</i></h1>
+                    <span style="margin-left: 60px;" class="far fa-plus-square"></span>
+                    <span class="far fa-paper-plane"></span>
+        </div>
+        <hr>
+        <div class="profile">
+        <table>
+            <tr>
+                <td><img  id="img1" src="user.jpg"/></td>
+                <td><h4 class="heading1" >Rajratn More</h4></td>
+                <td><span id="dots" class="fas fa-ellipsis-v"></span></td>
+            </tr>
+        </table>
+
+        </div>
+        <div class="imgcontainer">
+            <img  class ="background_img" src="backImg.jpg"/>
+        </div>
+        <div class="place_likes">
+            <span  style="color:red; margin-right: 10px;"class="fas fa-heart"></span>
+            <span  style=" margin-right: 10px;"class="far fa-comment"> </span>
+            <span style="  color :black ; margin-right: 10px;"class="far fa-paper-plane"></span>
+            <span style="color:white ; margin-right:200px; text-align: center;" class="fas fa-ellipsis-h"></span>
+            <span  class="far fa-bookmark"> </span>
+        </div>
+</body>
+</html>

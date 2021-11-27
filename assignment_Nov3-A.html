@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show data on Input Field</title>
+    <script>
+        function btnClicked(id){
+            let btnText = document.getElementById(id).innerText;
+            let inputBox = document.getElementById('inputText');
+            inputBox.value = btnText;
+        }
+    </script>
+</head>
+<body>
+    <h2>Showing data on input field</h2>
+    <input type="text" id="inputBox">
+    <script>
+        let msg = prompt("enter a data");
+        let inputBox = document.getElementById('inputBox');
+        inputBox.value = msg;
+    </script>
+</body>
+</html>
